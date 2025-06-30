@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yanbal Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Control de Productos Yanbal</h1>
+  </header>
+
+  <main>
+    <section id="inventario">
+      <h2>📦 Inventario</h2>
+      <button onclick="agregarProducto()">+ Agregar Producto</button>
+      <table id="tabla-inventario">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="fiados">
+      <h2>💰 Clientes Fiados</h2>
+      <button onclick="agregarCliente()">+ Agregar Cliente</button>
+      <table id="tabla-fiados">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Debe</th>
+            <th>Abonos</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="reportes">
+      <h2>📊 Reportes</h2>
+      <p>Total productos: <span id="total-productos">0</span></p>
+      <p>Total fiado: <span id="total-fiado">$0</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
